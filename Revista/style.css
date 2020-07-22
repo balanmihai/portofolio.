@@ -1,0 +1,242 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+.navbar{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #262626;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav{
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  margin-right: 5%;
+}
+.logo{
+  flex: 1 1 auto;
+  margin-left: 5%;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+a{
+  font-weight: bold;
+  margin: 15px;
+  color: whitesmoke;
+  text-decoration: none;
+  /* text-transform: lowercase; */
+}
+
+a:hover{
+  color: #E9458A;
+}
+
+.desen-mara{
+  padding-top: 5vh;
+  grid-column: 2/3;
+  height: 800px;
+  width: auto;
+  align-self: center;
+  justify-self: center;
+  /* align-content: center;
+  justify-content: center; */
+}
+
+.banner-area{
+  background: #ffcad4;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 10% 30% 50% 10%;
+}
+
+.scrie{
+  /* position: absolute; */
+  grid-column: 3/4;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: left;
+}
+.scrie h1{
+  /* color: #E9458A; */
+  font-size: 4rem;
+  animation: 
+  typing 3.5s steps(30, end),
+  blink-caret .5s step-end infinite;
+  border-right: .15em solid #E9458A;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrie a{
+  color: #262626;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color:#E9458A }
+}
+
+.about-area{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 91vh;
+}
+.text-part{
+  width: 65%;
+  height: 55%;
+}
+
+h1{
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+  font-size: 24px;
+  line-height: 50px;
+}
+
+.about-area{
+  background-color:#d0f4de;
+  color: #262626;
+  
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* The sidebar menu */
+.sidenav {
+
+  width: 400px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 5; /* Stay on top */
+  bottom: 8px;
+  right: 16px;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 600px;
+  text-align: right;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 1px 1px 1px 1px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #262626;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color:#E9458A;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media (max-width: 1024px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+
+
+  .banner-area{
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 2fr 2fr ;
+    align-items: center;
+    /* grid-gap:0.2em; */
+    max-height: 100%;
+  }
+
+  .desen-mara{
+    padding-top: 15vh;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 400px;
+    width: auto;
+    align-self: flex-end;
+    justify-self: center;
+    /* align-content: center;
+    justify-content: center; */
+  }
+
+  .scrie{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: start;
+    justify-content: center;
+  }
+
+  .scrie h1{
+    color: #E9458A;
+    font-size: 2rem;
+    animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+    border-right: .15em solid orange;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .navbar{
+    overflow: hidden;
+    white-space: nowrap;
+    
+  }
+
+  .navbar{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #262626;
+    /* width: 91%; */
+    z-index: 10;
+  }
+  
+  .nav{
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    /* margin-right: 5%; */
+  }
+
+
+  .about-area{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
